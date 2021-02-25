@@ -1,0 +1,5 @@
+# Repro
+
+```
+mvn exec:java
+```
