@@ -1,0 +1,62 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.databricks</groupId>
+  <artifactId>scalatest-junit-xml</artifactId>
+  <version>1</version>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <build>
+  <plugins>
+  <plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <version>1.2.1</version>
+    <executions>
+      <execution>
+        <goals>
+          <goal>java</goal>
+        </goals>
+      </execution>
+    </executions>
+    <configuration>
+      <mainClass>org.scalatest.tools.Runner</mainClass>
+      <arguments>
+        <argument>-j</argument>
+        <argument>ExampleSuite</argument>
+        <argument>-u</argument>
+        <argument>report</argument>
+        <argument>-oDF</argument>
+      </arguments>
+    </configuration>
+  </plugin>
+  </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.scalactic</groupId>
+      <artifactId>scalactic_2.13</artifactId>
+      <version>3.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.scalatest</groupId>
+      <artifactId>scalatest_2.13</artifactId>
+      <version>3.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.scalatestplus</groupId>
+      <artifactId>scalatestplus-junit_2.13</artifactId>
+      <version>1.0.0-M2</version>
+    </dependency>
+  </dependencies>
+</project>
