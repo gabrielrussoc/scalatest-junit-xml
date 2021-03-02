@@ -41,12 +41,12 @@
     <dependency>
       <groupId>org.scalactic</groupId>
       <artifactId>scalactic_2.13</artifactId>
-      <version>3.2.2</version>
+      <version>3.2.5</version>
     </dependency>
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_2.13</artifactId>
-      <version>3.2.2</version>
+      <version>3.2.5</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -55,8 +55,8 @@
     </dependency>
     <dependency>
       <groupId>org.scalatestplus</groupId>
-      <artifactId>scalatestplus-junit_2.13</artifactId>
-      <version>1.0.0-M2</version>
+      <artifactId>junit-4-13_2.13</artifactId>
+      <version>3.2.5.0</version>
     </dependency>
   </dependencies>
 </project>
